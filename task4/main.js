@@ -5,13 +5,13 @@ var octothorpe = '#',
 
 while (i < 7) { // Set how much lines do you need
     if (i % 2 != 0) {
-        while (j < 10) { // Set how much octothorpes do you need
+        while (j < 5) { // Set how much octothorpes do you need
             result += octothorpe + ' ';
             j++;
         }
         console.log(result);
     } else {
-        while (j < 10) { // Set how much octothorpes do you need
+        while (j < 5) { // Set how much octothorpes do you need
             result += octothorpe + ' ';
             j++;
         }
