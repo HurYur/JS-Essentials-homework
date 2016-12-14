@@ -1,10 +1,11 @@
 var guessNumber,
-    userNumber;
+    userNumber,
+    count = 0;
 
 guessNumber = Math.floor(Math.random()*100);
 (function quessing() {
     userNumber = prompt('Type your number');
-
+    count++;
     if (userNumber > guessNumber){
         alert('Your number is higher then mine, try again');
         quessing();
@@ -14,7 +15,8 @@ guessNumber = Math.floor(Math.random()*100);
         quessing();
     }
     else {
-        alert('You are right, the number is ' + guessNumber);
+        alert('You are right, the number is ' + guessNumber +
+            ' It takes you ' + count + ' steps to guess the number!');
 
     }
 })();
