@@ -27,7 +27,7 @@ function quessing() { //Here we generete number to quess
 }
 function doGame() { //Here we compare quessing
     if (countGuess < 3){
-        userNumber = prompt('Type your number from 0 to ' + gap + guessNumber);
+        userNumber = prompt('Type your number from 0 to ' + gap);
         countGuess++;
         if (userNumber > guessNumber) {
             alert('Your number is higher then mine, try again');
